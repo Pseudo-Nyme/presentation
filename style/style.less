@@ -1,0 +1,102 @@
+//Variables
+@bg: #0d0a0bff;
+@ttl: #983628ff;
+@txt: #a69888ff;
+
+//Global
+html {
+    background-color: @bg;
+}
+
+body {
+    max-width: 600px;
+    min-width: 300px;
+    
+    margin: auto;
+    
+    color: @txt;
+    
+    font-family: 'Source Sans Pro', sans-serif;
+    
+    h1, h2, p {
+        text-align: center;
+    }
+}
+
+.chapter {
+    margin-bottom: 50px;
+}
+
+//Text
+h1 {
+    margin-bottom: 40px;
+}
+
+h1, h2, b {
+    color: @ttl;
+}
+
+.list {
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}
+
+li {
+    margin-top: 4px;
+}
+
+#click_fact:hover {
+    cursor: pointer;
+}
+
+#ul_fact {
+    display: none;
+}
+
+//Images & fact bubble
+img {
+    width: 200px;
+    
+    border-radius: 5px;
+    border-style: none;
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#img_code {
+    width: 250px;
+}
+
+.illu {
+    position: relative;
+}
+
+span {
+    font-size: 18px;
+    max-width: 150px;
+    background-color: @ttl;
+    padding: 5px;
+    position: absolute;
+    top: 90%;
+    
+    display: none;
+    
+    &#pp {
+        left: 62%;
+    }
+    
+    &#help {
+        left: 70%;
+    }
+    
+    &#furry {
+        left: 65%;
+    }
+    
+    &#d20 {
+        left : 60%;
+    }
+}
